@@ -7,7 +7,7 @@ import { useMobileNavMenu } from "../../context/MobileNavMenu";
 
 export default function Header() {
   const { setTheme, theme } = useTheme();
-  const { onOpen } = useMobileNavMenu();
+  const { onOpen, onToggle } = useMobileNavMenu();
 
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -25,7 +25,7 @@ export default function Header() {
         <h3 className="text-slate-900 dark:text-white"> Francisco5g </h3>
       </div>
 
-      <HamburgerIcon onOpen={onOpen} />
+      <HamburgerIcon onOpen={onOpen} onToggle={onToggle} />
 
       <div className="hidden md:flex md:items-center">
         <div className="text-slate-900 dark:text-gray-300 hover:text-primary dark:hover:text-primary">

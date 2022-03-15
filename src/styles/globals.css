@@ -9,7 +9,7 @@ body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
 
-  @apply w-screen h-screen dark:bg-slate-800 bg-slate-300;
+  @apply w-screen h-screen dark:bg-slate-800 bg-slate-300 overflow-hidden;
 }
 
 a {
