@@ -44,7 +44,7 @@ export default function Header() {
             {theme === "dark" ? <BsSunFill {...themeIconsProps} /> : <BsMoonFill {...themeIconsProps} />}
           </button>
 
-          <Link passHref href="#">
+          <Link passHref href="https://github.com/Francisco5g/my-personal-site">
             <a target="_blank">
               <BsGithub className="text-gray-500 dark:text-slate-400 dark:hover:text-white hover:text-gray-900" />
             </a>
