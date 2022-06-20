@@ -13,10 +13,6 @@ const Home: NextPage = () => {
       <Header />
 
       <MobileNavMenu />
-      
-      <main>
-        <div> I'm working on it!!!!! </div>
-      </main>
     </div>
   );
 };
