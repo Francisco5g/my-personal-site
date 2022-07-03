@@ -3,11 +3,9 @@ import { BsFillTerminalFill, BsGithub, BsMoonFill, BsSunFill } from "react-icons
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import HamburgerIcon from "../Icons/HamburgerIcon";
-import { useMobileNavMenu } from "../../context/MobileNavMenu";
 
 export default function Header() {
   const { setTheme, theme } = useTheme();
-  const { onOpen, onToggle } = useMobileNavMenu();
 
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -24,8 +22,6 @@ export default function Header() {
         <BsFillTerminalFill className="mr-2 text-primary dark:text-gray-300" />
         <h3 className="text-slate-900 dark:text-white"> Francisco5g </h3>
       </div>
-
-      <HamburgerIcon onOpen={onOpen} onToggle={onToggle} />
 
       <div className="hidden md:flex md:items-center">
         <div className="text-slate-900 dark:text-gray-300 hover:text-primary dark:hover:text-primary">
